@@ -3,7 +3,11 @@ package org.example.utils;
 import org.example.adt.Stack;
 import org.example.adt.StaticStack;
 
+import java.util.Random;
+
 public class StackUtil {
+
+    private Random random;
 
     public static void print(Stack stack) {
         Stack copy = copy(stack);
