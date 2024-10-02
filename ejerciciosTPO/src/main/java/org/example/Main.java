@@ -30,18 +30,18 @@ public class Main {
 
     //Ejercicio 2.1
 
-    public static StaticQueueOfStacksUtil colaCargadaDePilas(int n) {
+    private static StaticQueueOfStacksUtil colaCargadaDePilas(int n) {
         StaticQueueOfStacksUtil colaPilas = new StaticQueueOfStacksUtil();
         for(int i = 0; i < n; i++){
             StaticStack pilaACargar = new StaticStack();
-            cargarPilas(pilaACargar,n);
+            cargarPila(pilaACargar,n);
             colaPilas.add(pilaACargar);
         }
         return colaPilas;
     }
 
 
-    public static void cargarPilas(StaticStack stack, int n){
+    private static void cargarPila(StaticStack stack, int n){
         Random random = new Random();
         int numeroRandom = random.nextInt();
 
@@ -51,6 +51,7 @@ public class Main {
     }
 
 /*
+// ESTO VA EN UN NUEVO UTIL
     public static int calcularTraza(StaticQueueOfStacksUtil colaDePilas){
         int cantidadPilas = colaDePilas.contadorDePilas();
     }
