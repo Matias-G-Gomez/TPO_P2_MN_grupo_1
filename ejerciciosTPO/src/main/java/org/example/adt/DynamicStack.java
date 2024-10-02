@@ -8,7 +8,11 @@ public class DynamicStack implements Stack {
 
     @Override
     public int getTop() {
-        return this.first.getValue();
+        if(this.isEmpty()){
+            throw new RuntimeException("No se puede desapilar una pila vacía");
+        }else {
+            return this.first.getValue();
+        }
     }
 
     @Override
