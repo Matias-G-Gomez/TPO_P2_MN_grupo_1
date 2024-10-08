@@ -20,7 +20,7 @@ public class StaticSet implements Set{
     private int count;
     private final Random random;
 
-    public StaticSet(int[] array) {
+    public StaticSet() {
         this.array = new int[MAX];
         this.count = 0;
         this.random = new Random();
