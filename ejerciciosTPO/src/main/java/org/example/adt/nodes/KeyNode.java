@@ -6,10 +6,10 @@ public class KeyNode {
     private ValueNode valueNode;
     private KeyNode next;
 
-    public KeyNode(int key, KeyNode next, ValueNode valueNode) {
+    public KeyNode(int key, ValueNode valueNode, KeyNode next) {
         this.key = key;
-        this.next = next;
         this.valueNode = valueNode;
+        this.next = next;
     }
 
     public int getKey() {
@@ -18,6 +18,10 @@ public class KeyNode {
 
     public void setKey(int key) {
         this.key = key;
+    }
+
+    public ValueNode getValueNode() {
+        return valueNode;
     }
 
     public ValueNode getValue() {
