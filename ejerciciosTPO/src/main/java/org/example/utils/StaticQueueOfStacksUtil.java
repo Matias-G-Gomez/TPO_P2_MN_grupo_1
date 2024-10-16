@@ -52,4 +52,15 @@ public class StaticQueueOfStacksUtil implements QueueOfStacks {
         }
         return count;
     }
+
+
+    // RESOLUCIÓN EJERCICIO 2.1.1
+    // 1. Desarrolle una función que reciba una instancia de QueueOfStacks, y calcule su traza.
+
+    public int calcularTraza(StaticQueueOfStacks colaDePilas){
+        int traza = 0;
+
+        return traza;
+    }
+
 }

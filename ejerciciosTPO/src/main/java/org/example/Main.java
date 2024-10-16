@@ -49,12 +49,4 @@ public class Main {
             stack.add(numeroRandom);
         }
     }
-
-/*
-// ESTO VA EN UN NUEVO UTIL
-    public static int calcularTraza(StaticQueueOfStacksUtil colaDePilas){
-        int cantidadPilas = colaDePilas.contadorDePilas();
-    }
-
-*/
 }
