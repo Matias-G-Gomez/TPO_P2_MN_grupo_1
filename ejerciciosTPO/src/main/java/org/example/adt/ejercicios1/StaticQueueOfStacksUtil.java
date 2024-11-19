@@ -1,4 +1,4 @@
-package org.example.utils;
+package org.example.adt.ejercicios1;
 
 import org.example.adt.*;
 

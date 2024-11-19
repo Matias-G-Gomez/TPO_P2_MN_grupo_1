@@ -1,4 +1,8 @@
-package org.example.adt;
+package org.example.adt.ejercicios1;
+
+import org.example.adt.QueueOfStacks;
+import org.example.adt.Stack;
+import org.example.adt.StaticStack;
 
 public class StaticQueueOfStacks implements QueueOfStacks {
 
