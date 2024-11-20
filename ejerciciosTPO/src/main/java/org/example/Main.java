@@ -49,6 +49,7 @@ public class Main {
         }
     }
 
+    /*
     //Para el ejercicio 5 primera parte
     Stack stack = new StaticStack();
         stack.add(5);
@@ -112,4 +113,6 @@ public class Main {
     double piAproximado = montecarlo.aproximarPi();
         System.out.println("Valor aproximado de π: " + piAproximado);
 
+
+     */
 }
