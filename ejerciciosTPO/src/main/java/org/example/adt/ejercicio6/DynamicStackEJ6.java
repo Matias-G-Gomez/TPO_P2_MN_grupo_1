@@ -1,8 +1,9 @@
-package org.example;
+package org.example.adt.ejercicio6;
 
-import org.example.nodes.Node;
+import org.example.adt.Stack;
+import org.example.adt.nodes.Node;
 
-public class DynamicStackEJ6 implements Stack{
+public class DynamicStackEJ6 implements Stack {
 
     private Node first;
     private int maxCapacity;

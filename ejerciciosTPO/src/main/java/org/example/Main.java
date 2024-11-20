@@ -3,8 +3,13 @@ package org.example;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
+import org.example.adt.Stack;
 import org.example.adt.StaticStack;
+import org.example.adt.ejercicio5.Coordenada;
+import org.example.adt.ejercicio5.EJ5;
+import org.example.adt.ejercicio5.Montecarlo;
 import org.example.adt.ejercicios1.StaticQueueOfStacksUtil;
+import org.example.adt.*;
 
 import java.util.Random;
 import java.util.Scanner;

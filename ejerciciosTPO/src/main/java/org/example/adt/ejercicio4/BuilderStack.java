@@ -1,4 +1,6 @@
-package org.example;
+package org.example.adt.ejercicio4;
+
+import org.example.adt.Stack;
 
 public class BuilderStack {
     private StaticStackEJ4 stack;

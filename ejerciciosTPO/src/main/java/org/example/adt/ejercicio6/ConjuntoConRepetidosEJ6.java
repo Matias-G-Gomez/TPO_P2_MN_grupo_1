@@ -1,4 +1,6 @@
-package org.example;
+package org.example.adt.ejercicio6;
+
+import org.example.adt.Set;
 
 import java.util.ArrayList;
 import java.util.HashMap;

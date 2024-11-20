@@ -1,4 +1,6 @@
-package org.example;
+package org.example.adt.ejercicio4;
+
+import org.example.adt.Set;
 
 public class BuilderSet {
     private StaticSetEJ4 set;

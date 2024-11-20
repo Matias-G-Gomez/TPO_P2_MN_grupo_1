@@ -1,4 +1,4 @@
-package org.example;
+package org.example.adt.ejercicio5;
 
 // Este TDA representa una coordenada en el plano
 public class Coordenada {

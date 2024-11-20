@@ -1,8 +1,9 @@
-package org.example;
+package org.example.adt.ejercicio6;
 
-import org.example.nodes.NodeEJ6ColaDinamicaCiclica;
+import org.example.adt.Queue;
+import org.example.adt.ejercicio6.nodesej6.NodeEJ6ColaDinamicaCiclica;
 
-public class ColaDinamicaCiclicaDoblementeEnlazadaEJ6 implements Queue{
+public class ColaDinamicaCiclicaDoblementeEnlazadaEJ6 implements Queue {
 
     // Para implementar una cola dinámica cíclica doblemente enlazada,
     // uso nodos que tengan referencias tanto al nodo siguiente como al anterior

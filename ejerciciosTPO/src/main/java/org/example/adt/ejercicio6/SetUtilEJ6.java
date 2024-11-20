@@ -1,4 +1,6 @@
-package org.example;
+package org.example.adt.ejercicio6;
+
+import org.example.adt.Set;
 
 public class SetUtilEJ6 {
     public static Set copy(Set set) {

@@ -1,6 +1,5 @@
-package org.example;
-import org.example.Stack;
-import org.example.StaticStack;
+package org.example.adt.ejercicio5;
+import org.example.adt.*;
 
 public class EJ5 {
 

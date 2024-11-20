@@ -1,4 +1,4 @@
-package org.example.nodes;
+package org.example.adt.ejercicio6.nodesej6;
 
 public class NodeEJ6ColaDinamicaCiclica {
 
