@@ -25,6 +25,50 @@ public class Main {
         //Llamo a la función calcularTraza y devuelvo el resultado por pantalla
 
 
+
+        //Para el ejercicio 5 primera parte
+        Stack stack = new StaticStack();
+        stack.add(5);
+        stack.add(1);
+        stack.add(3);
+        stack.add(5);
+        stack.add(2);
+        stack.add(1);
+        stack.add(4);
+        stack.add(3);
+
+        // Pila original.
+        System.out.println("Pila original:");
+        printStack(stack);
+
+        // Elimina elementos repetidos y ordena
+        Stack result = EJ5.notRepeatedElementsOrdered(stack);
+
+        // Impresion de la pila resultante
+        System.out.println("\nPila sin repetidos y ordenada:");
+        printStack(result);
+
+        // Ejercicio Montecarlo
+
+        int totalCoordenadas = 1000;
+        double radio = 1.0; // Radio del círculo.
+
+        // Crear el conjunto de coordenadas y la estructura Montecarlo.
+        Montecarlo montecarlo = new Montecarlo(radio);
+        Random random = new Random();
+
+        for (int i = 0; i < totalCoordenadas; i++) {
+            double x = random.nextDouble() * radio;
+            double y = random.nextDouble() * radio;
+            Coordenada c = new Coordenada(x, y);
+
+            montecarlo.agregarCoordenada(c);
+        }
+
+        // Aproximar π y mostrar el resultado
+        double piAproximado = montecarlo.aproximarPi();
+        System.out.println("Valor aproximado de π: " + piAproximado);
+
     }
 
     //Ejercicio 2.1
@@ -49,30 +93,9 @@ public class Main {
         }
     }
 
-    /*
-    //Para el ejercicio 5 primera parte
-    Stack stack = new StaticStack();
-        stack.add(5);
-        stack.add(1);
-        stack.add(3);
-        stack.add(5);
-        stack.add(2);
-        stack.add(1);
-        stack.add(4);
-        stack.add(3);
-
-    // Pila original.
-        System.out.println("Pila original:");
-    printStack(stack);
-
-    // Elimina elementos repetidos y ordena
-    Stack result = EJ5.notRepeatedElementsOrdered(stack);
-
-    // Impresion de la pila resultante
-        System.out.println("\nPila sin repetidos y ordenada:");
-    printStack(result);
 
     // Metodo auxiliar para imprimir el contenido de una pila
+    // usada en el EJ5
     public static void printStack (Stack stack){
         Stack aux = new StaticStack();
 
@@ -89,30 +112,4 @@ public class Main {
         System.out.println();
     }
 
-
-    // Ejercicio Montecarlo
-
-    int totalCoordenadas = 1000;
-    double radio = 1.0; // Radio del círculo.
-
-    // Crear el conjunto de coordenadas y la estructura Montecarlo.
-    Montecarlo montecarlo = new Montecarlo(radio);
-    Random random = new Random();
-
-        for (
-    int i = 0;
-    i < totalCoordenadas; i++) {
-        double x = random.nextDouble() * radio;
-        double y = random.nextDouble() * radio;
-        Coordenada c = new Coordenada(x, y);
-
-        montecarlo.agregarCoordenada(c);
-    }
-
-    // Aproximar π y mostrar el resultado
-    double piAproximado = montecarlo.aproximarPi();
-        System.out.println("Valor aproximado de π: " + piAproximado);
-
-
-     */
 }

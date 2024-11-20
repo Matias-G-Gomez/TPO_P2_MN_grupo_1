@@ -11,13 +11,11 @@ public class ConjuntoConRepetidosEJ6 {
     private final Map<Integer, Integer> counts; // Mapeo de elementos a sus cantidades
 
     public ConjuntoConRepetidosEJ6() {
-        this.elements = new StaticSetEJ6(); // O cualquier implementación de Set que prefieras
+        this.elements = new StaticSetEJ6();
         this.counts = new HashMap<>();
     }
 
-    /**
-     * Agrega un elemento al multiset, incrementando su contador.
-     */
+    // Agrega un elemento al conjunto, incrementando su contador.
     public void add(int value) {
         if (!SetUtilEJ6.in(value, elements)) {
             elements.add(value);
@@ -27,13 +25,11 @@ public class ConjuntoConRepetidosEJ6 {
         }
     }
 
-    /**
-     * Elimina una ocurrencia del elemento del multiset.
-     * Si el contador llega a cero, elimina el elemento por completo.
-     */
+    // Elimina una ocurrencia del elemento del conjunto.
+    // Si el contador llega a cero, elimina el elemento por completo.
     public void remove(int value) {
         if (!SetUtilEJ6.in(value, elements)) {
-            throw new RuntimeException("Elemento no encontrado en el multiset");
+            throw new RuntimeException("Elemento no encontrado en el conjunto");
         }
 
         int currentCount = counts.get(value);
@@ -45,23 +41,17 @@ public class ConjuntoConRepetidosEJ6 {
         }
     }
 
-    /**
-     * Devuelve cuántas veces aparece un elemento en el multiset.
-     */
+    // Devuelve cuantas veces aparece un elemento en el conjunto.
     public int count(int value) {
         return counts.getOrDefault(value, 0);
     }
 
-    /**
-     * Devuelve true si el multiset está vacío.
-     */
+    // Devuelve true si el conjunto esta vacio.
     public boolean isEmpty() {
         return elements.isEmpty();
     }
 
-    /**
-     * Devuelve una lista de todos los elementos (con repetición).
-     */
+    // Devuelve una lista de todos los elementos (con repeticion).
     public List<Integer> toList() {
         List<Integer> result = new ArrayList<>();
         Set copy = SetUtilEJ6.copy(elements);
@@ -77,16 +67,12 @@ public class ConjuntoConRepetidosEJ6 {
         return result;
     }
 
-    /**
-     * Devuelve el conjunto base de elementos únicos en el multiset.
-     */
+    // Devuelve el conjunto base de elementos unicos en el conjunto
     public Set uniqueElements() {
         return SetUtilEJ6.copy(elements);
     }
 
-    /**
-     * Imprime todos los elementos del multiset con sus cantidades.
-     */
+    // Imprime todos los elementos del conjunto con sus cantidades.
     public void print() {
         Set copy = SetUtilEJ6.copy(elements);
         while (!copy.isEmpty()) {

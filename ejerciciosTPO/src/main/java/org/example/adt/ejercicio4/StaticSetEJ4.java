@@ -41,7 +41,7 @@ public class StaticSetEJ4 implements Set {
             if (this.array[i] == a) {
                 this.array[i] = this.array[this.count - 1];
                 this.count--;
-                return;  // Terminamos después de remover el elemento
+                return;  // Termino despues de remover el elemento
             }
         }
     }
